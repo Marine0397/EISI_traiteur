@@ -1,0 +1,37 @@
+Code Review
+
+Codeur -> Adrien NICETO
+Review -> Marine ADAM
+
+
+
+-> Nom des variables :
+	-> Positif :
+		-> Les noms des variables sont écrit en toutes lettres
+
+
+-> Commentaires 
+	-> Positif :
+		-> Au début pour chaque blocs il à bien un commentaire au début qui explique ce qu'il fait
+
+	-> Négatif : 
+		-> A partir du milieu, il n'y a plus de commentaire à chaque bloc mais exemple il aurait pu mettre Chercher la température maximum, ...
+
+
+-> Code
+	-> Négatif :
+
+		-> Il a écrit les chambres en dur alors si un jours ou ajoute ou supprime une chambre il faudra adapté le code et même le reprendre à chaque modification de chambre
+		-> Il a combiné la réponse de l'exercice 2 avec l'Alarme et pour répondre à l'exercice 3 il a rajouter une 4ème option, si le numéro "4" est choisi on tombe enfin sur le tableau de bord demandé dans l'exercice 3
+		-> Trop de répétition : pour  les températures de la liste et la conversion temperature_corrige ',' par '.' il l'a répéter trois fois alors que pour chacun de ces 2 blocs il aurais pu faire une seule boucle répéter 3 par rapport au nombre de chambre et dire qu'il y a seulement 3 listes
+		-> Dans ce code je ne vois pas l'utilité du bloc try
+		-> Il y a des sauts de ligne et des espaces ce n'est pas tout condensé donc ça aide à une compréhension plus rapide mais il aurait pu en mettre un peu plus pour que cela soit plus claire
+		-> il n'a pas explicitement bloque les types des variables exemples en float
+		-> Dans le code le fichier est lu plusieur fois donc plusieurs fois les mêmes lignes "with open('traiteur.csv') as csv_file:
+            contenu_csv = csv.reader(csv_file, delimiter=';')" alors que je pense que cela peut-être évité
+		-> il aurait pu adapter le nombre de tiret "print('-'*57)" pour que ca ne dépasse pas trop le tableau et que cela le rende plus "jolie"
+
+	-> Positif :
+
+		-> Je trouve que la fonction liste fonctionne bien dans ce code et que cela rend le code assez clair et facile à lire
+
